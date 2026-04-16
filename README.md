@@ -33,3 +33,5 @@ git clone  git@github.com:favourkendi-dev/wordly-spa.git
 4. Push your branch : `git push origin feature-name`
 5. create a pull request
 
+### Author
+```https://github.com/favourkendi-dev```
