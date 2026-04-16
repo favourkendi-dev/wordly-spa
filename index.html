@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly SPA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <header class="main-header">
+            <h1>Wordly<span>.</span></h1>
+            <p>Your interactive language companion</p>
+        </header>
+
+        <div class="dashboard-grid">
+            <main class="main-column">
+                <section class="search-section">
+                    <form id="search-form" aria-label="Dictionary Search">
+                        <input type="text" id="search-input" placeholder="Enter a word (e.g., Luminous)..." required aria-required="true">
+                        <button type="submit" id="search-button">Search</button>
+                    </form>
+                </section>
+
+                <div id="welcome-content">
+                    <section class="hero-banner">
+                        <h2>Master Your Vocabulary</h2>
+                        <p>Search over 300,000 words, hear pronunciations, and build your personal dictionary.</p>
+                    </section>
+
+                    <section class="trending-container">
+                        <h3>Trending Now</h3>
+                        <div class="trending-words">
+                            <span class="trend-pill" onclick="quickSearch('Ephemeral')">Ephemeral</span>
+                            <span class="trend-pill" onclick="quickSearch('Resilience')">Resilience</span>
+                            <span class="trend-pill" onclick="quickSearch('Ubiquitous')">Ubiquitous</span>
+                            <span class="trend-pill" onclick="quickSearch('Melancholy')">Melancholy</span>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="quote-card">
+                    <div class="quote-icon"></div>
+                    <p>The Limits of my Language mean the limits of my language mean the limits of my world</p>
+                    <cite>Ludwig Wittgenstein</cite>
+
+                </section>
+
+                <section class="tips-grid">
+                    <div class="tip-box">
+                        <h4>Use Synonyms to make Writing more Vivid</h4>
+
+                    </div>
+
+                    <div class="tip-box">
+                        <h4>IELTS Hint</h4>
+                        <p>Focus on context rather than just definitions</p>
+
+                    </div>
+
+                </section>
+                
+                <div id="result-display" class="result-card" style="display: none;" aria-live="polite">
+                    
+            </main>
+
+            <aside class="sidebar-column">
+                
+                <div class="card side-box wotd">
+                    <h3>Word of the Day</h3>
+                    <div class="wotd-content">
+                        <span class="pos">Adjective</span>
+                        <h4>Luminous</h4>
+                        <p>Full of or shedding light; bright or shining, especially in the dark.</p>
+                    </div>
+                </div>
+
+                <div class="card side-box favorites">
+                    <h3>My Favorites</h3>
+                    <ul id="favorites-list">
+                        </ul>
+                </div>
+
+                <div class="card side-box tags-container">
+                    <h3>Related Categories</h3>
+                    <div class="tag-cloud">
+                        <span class="tag">Academic</span>
+                        <span class="tag">Literature</span>
+                        <span class="tag">IELTS Prep</span>
+                        <span class="tag">Daily Use</span>
+                        <span class="tag">Professional</span>
+                    </div>
+                </div>
+
+                <div class="card side-box community">
+                    <h3>Live Activity</h3>
+                    <ul class="activity-feed">
+                        <li>124 people are looking at <strong>"Serendipity"</strong></li>
+                        <li>1.2k users mastered <strong>"Resilient"</strong> today</li>
+                    </ul>
+                </div>
+
+                <div class="card side-box history">
+                    <h3>Recent History</h3>
+                    <ul id="history-list">
+                        </ul>
+                </div>
+
+                <div class="card side-box stats">
+                    <h3>Your Progress</h3>
+                    <div class="progress-bar-container">
+                        <p>Weekly Goal: <strong>12/20</strong> words</p>
+                        <div style="background: #eee; height: 8px; border-radius: 4px; overflow: hidden; margin-top: 10px;">
+                            <div id="progress-bar" style="background: var(--primary-color); width: 60%; height: 100%; transition: width 0.5s ease;"></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div> 
+
+        <footer class="main-footer">
+            <div class="footer-inner">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="logo">Wordly<span>.</span></div>
+                        <p>Empowering language learners with instant insights and vocabulary mastery since 2026.</p>
+                        <div class="social-row">
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>Product</h4>
+                            <ul>
+                                <li><a href="#">Dictionary</a></li>
+                                <li><a href="#">Thesaurus</a></li>
+                                <li><a href="#">API Access</a></li>
+                            </ul>
+                        </div>
+                        <div class="link-group">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="#">Grammar Guide</a></li>
+                                <li><a href="#">Word Games</a></li>
+                                <li><a href="#">Help Center</a></li>
+                            </ul>
+                        </div>
+                        <div class="link-group">
+                            <h4>Legal</h4>
+                            <ul>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Wordly Inc. Designed for linguistic excellence.</p>
+                    <div class="status-indicator">
+                        <span class="dot"></span> API System Online
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
