@@ -1,2 +1,9 @@
 ### Project Title
 Worldly Dictionary is a dynamic web application designed to provide users with instant access to global definitions and linguistic data. Built with a focus on clean UI and efficient data retrieval, the project demonstrates my ability to integrate complex datasets into a user-friendly interface. It features a responsive design that ensures a seamless experience across all devices, highlighting my proficiency in modern CSS and functional JavaScript.
+
+### Installation
+1. Clone the Repository :
+``` bash
+git clone  git@github.com:favourkendi-dev/wordly-spa.git
+
+```
