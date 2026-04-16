@@ -20,3 +20,8 @@ git clone  git@github.com:favourkendi-dev/wordly-spa.git
 6. Audio Pronunciation
 7. UI & UX Design Features
 8. Deployment
+
+### Tools Used
+1. Vscode
+2. Googlechrome
+
