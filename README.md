@@ -7,3 +7,14 @@ Worldly Dictionary is a dynamic web application designed to provide users with i
 git clone  git@github.com:favourkendi-dev/wordly-spa.git
 
 ```
+
+#### Features
+
+1. Asynchronous Javascript
+2. Document Object Model (DOM)
+3. CSS Architecture
+4. Semantic HTML5 
+5. Dictionary API
+6. Audio Pronunciation
+7. UI & UX Design Features
+8. Deployment
