@@ -25,3 +25,11 @@ git clone  git@github.com:favourkendi-dev/wordly-spa.git
 1. Vscode
 2. Googlechrome
 
+### Contributing
+
+1. Fork the repository
+2. create a new branch : `git checkout -b feature-name`
+3. Make your Changes.
+4. Push your branch : `git push origin feature-name`
+5. create a pull request
+
