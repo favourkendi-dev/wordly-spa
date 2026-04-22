@@ -35,3 +35,6 @@ git clone  git@github.com:favourkendi-dev/wordly-spa.git
 
 ### Author
 ```https://github.com/favourkendi-dev```
+
+### The link to my README 
+``` https://favourkendi-dev.github.io/wordly-spa/ ```
